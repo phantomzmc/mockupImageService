@@ -1,0 +1,214 @@
+
+.stepwizard-step p {
+    margin-top: 10px;
+
+}
+.stepwizard-row {
+
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+    border-color: #212121;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    /* color: #fff;
+    background-color: #fc561f; */
+}
+.stepwizard-step button[disabled] {
+    color: #000000;
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+    
+
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 30px;
+}
+.form-payment {
+    align-self: center;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.image-preview {
+    margin: 10px;
+}
+.image-preview-input {
+    position: relative;
+	overflow: hidden;
+	margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+.submit-payment{
+    padding: 20px;
+    border: 1px solid rgba(189, 175, 175, 0.842);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.list {
+    padding: 20px;
+    border: 1px solid rgba(189, 175, 175, 0.842);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.list img{
+    padding: 5px;
+
+}
+.list-invoice {
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.842);
+    border-radius: 15px;
+    margin-bottom: 50px;
+    background-color : white;
+}
+.list-invoice h3{
+    margin-left: 20px;
+}
+
+.head-invoice {
+    margin: 50px 0px 50px 0px;
+}
+.head-invoice img {
+    margin-bottom: 20px;
+}
+.address-invoice {
+    margin: 50px 50px 50px 50px ;
+}
+.address-invoice h5 {
+    color: lightslategray
+}
+.address-invoice h4 {
+    margin-left: 10px;
+}
+.address-invoice .type-payment {
+    margin-top: 20px;
+    width: 50%;
+    background-color: #fc561f;
+    border: 2px solid #ccc; 
+    text-align: center;
+    border-radius: 25px;
+    color: #fff;
+    padding: 40px;
+
+}
+.button-payment {
+    margin: 10px;
+}
+.button-payment button{
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+.layout-payment {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#deleteItem{
+    background-color: #d01323;
+    border-radius: 10px; 
+    padding: 5px;
+}
+.basket {
+    text-align: center;
+}
+.basket th {
+    background-color: #fc561f;
+    color: #fff;
+    text-align: center;   
+}
+#form-payment{
+    margin-top: 20px;
+}
+.credit {
+    text-align: center
+
+}
+#credit-preview {
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(80, 7, 148);
+    border:  rgb(89, 9, 163);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#credit-preview img {
+    float: right;
+    margin-top: 10px;
+    width: 100px;
+    height: 55px;;
+}
+#credit-preview .credit-text{
+    text-align: left;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 100px;
+
+}
+#credit-text2 {
+    color: #fff;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+.left {
+    width: 40%;
+}
+.center {
+    width: 30%;
+}
+.right {
+    width: 30;
+    text-align: right;
+}
+
+
+

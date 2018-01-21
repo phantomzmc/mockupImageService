@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ShutterRunning</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <!-- Material Design icon font -->
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/landing-page.css"> -->
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">หน้าเเรก</a>
+    <a href="#">ปฎิทินการวิ่ง</a>
+    <a href="#">รายการวิ่ง</a>
+    <a href="#">สมัครวิ่ง</a>
+  </div>
+  <nav class="navbar navbar-light fixed-top scrolling-navbar" style="background-color: #1f1f1f;">
+    <div class="container">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <button style="color:#ffffff;background:none;border:0;">
+          &#9776;
+        </button>
+      </span>
+      <a id="navbar-brand" href="#">
+        <h5>ShutterRuning ImageService</h5>
+      </a>
+      <a href="payment.html">
+        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+
+  </nav>
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view hm-black-light">
+        <!--Video source-->
+        <video id="video-full" autoplay loop>
+          <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+        </video>
+        <div class="full-bg-img"></div>
+      </div>
+
+      <div class="carousel-caption" align-content="center">
+        <form class="form-inline">
+
+          <label for="lgFormGroupInput" class="col-sm-12 col-form-label col-form-label-lg">Search Event</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="ค้นหารายการวิ่ง">
+            <button type="submit" class="btn">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </div>
+        </form>
+        <div class="col-sm-12">
+          <div class="go-event">
+            <a href="#events" class="btn btn-primary btn-lg">Go to Events</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/.Slide-->
+
+  <!-- <section class="content-section-a">
+    <div class="container">
+      <div class="text-about col-lg-12 col-xs-12 col-sm-12">
+        <h1 align="center">
+          <strong>A</strong>bout</h1>
+        <div class="line">
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 ml-auto">
+          <div id="content-about">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">พื้นที่นี้ยังว่างๆอยู่นะจ๊ะ
+              <br>Special Thanks</h2>
+            <p class="lead">A special thanks to
+              <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website
+              to become a member.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 mr-auto">
+          <div id="img-about">
+            <img src="img/slide5.jpg" class="img-responsive" alt="" width="100%">
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <div id="events" class="text-event">
+    <h1 align="center">Events
+      <strong>Running</strong>
+    </h1>
+    <div class="line">
+      <hr>
+    </div>
+  </div>
+  <!-- Card Event -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video id="vdo-card" class="embed-responsive-item" controls autoplay muted width="100%">
+              <source src="img/video2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sydney Marathon Festival 2016 </h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="image-event.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+            <!-- <a id="allphoto" href="#allphoto" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">>>></a>
+              <div class="collapse" id="allphoto">
+                  <div class="card card-block">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                  </div>
+                </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <span></span>
+                <img class="d-block img-fluid" src="img/Banner172.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner174.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner176.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">UNICEF LINE Run</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <span>Card title</span>
+                <img class="d-block img-fluid" src="img/Banner172.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner174.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner176.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <!-- <span class="badge-box">
+                <i class="fa fa-user-circle-o"></i>
+              </span> -->
+            <h5 class="card-title">เดิน-วิ่งแม่กันยา มินิฮาล์ฟมาราธอนครั้งที่1</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/534164/pexels-photo-534164.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Seaside Running วิ่งข้างคลื่น</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/534164/pexels-photo-534164.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hua Hin - Classic Run Project</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video id="vdo-card" class="embed-responsive-item" controls autoplay muted width="100%">
+              <source src="img/video2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sydney Marathon Festival 2016 </h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <span></span>
+                <img class="d-block img-fluid" src="img/Banner172.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner174.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner176.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">UNICEF LINE Run</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <span>Card title</span>
+                <img class="d-block img-fluid" src="img/Banner172.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner174.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner176.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">UNICEF LINE Run</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              data-placement="top" title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" data-placement="top"
+              title="ช่างตั้ม" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <span></span>
+                <img class="d-block img-fluid" src="img/Banner172.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner174.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner176.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">UNICEF LINE Run</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/534164/pexels-photo-534164.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Seaside Running วิ่งข้างคลื่น</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/534164/pexels-photo-534164.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?h=350&auto=compress&cs=tinysrgb"
+                  alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hua Hin - Classic Run Project</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video id="vdo-card" class="embed-responsive-item" controls autoplay muted width="100%">
+              <source src="img/video2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sydney Marathon Festival 2016 </h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <span></span>
+                <img class="d-block img-fluid" src="img/Banner172.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner174.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner176.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">UNICEF LINE Run</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="http://shutterrunning.com/assets/img/Photographer/jin.jpg" alt="avatar" data-toggle="tooltip" title="ช่างจิ้ม"
+            />
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" title="ช่างตั้ม"
+            />
+            <img class="avatar3" src="http://shutterrunning.com/assets/img/Photographer/Kung.jpg" alt="avatar" data-toggle="tooltip"
+              title="ช่างคง" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <span>Card title</span>
+                <img class="d-block img-fluid" src="img/Banner172.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner174.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner176.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">UNICEF LINE Run</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              data-placement="top" title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" data-placement="top"
+              title="ช่างตั้ม" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 xs-12">
+        <div class="card card-01">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <span>Card title</span>
+                <img class="d-block img-fluid" src="img/Banner172.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner174.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/Banner176.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">UNICEF LINE Run</h5>
+            <p align="center">
+              <strong>Date : </strong> 16 October 2017</p>
+            <p align="center">
+              <a href="show_image.html" class="btn btn-default text-uppercase">View More</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar1" src="http://shutterrunning.com/assets/img/Photographer/Nong.jpg" alt="avatar" data-toggle="tooltip"
+              data-placement="top" title="ช่างหน่อง" />
+            <img class="avatar2" src="http://shutterrunning.com/assets/img/Photographer/Tum.jpg" alt="avatar" data-toggle="tooltip" data-placement="top"
+              title="ช่างตั้ม" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- /Card Events -->
+  <div class="center">
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="">
+        <input type="text" value="1" class="active" align="rigth" style="width:50px;">
+      </a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">.</a>
+      <a href="#">10</a>
+      <a href="#">&raquo;</a>
+    </div>
+  </div>
+
+  <div id="tf-clients" class="text-center">
+    <div class="overlay">
+      <div class="container">
+        <div class="section-title center">
+          <h1>Ban
+            <strong>ner</strong>
+          </h1>
+          <div class="line">
+            <hr>
+          </div>
+        </div>
+
+        <div id="clients" class="owl-carousel owl-theme">
+          <div class="row">
+            <div class="item col-sm-3">
+              <img src="img/client/01.png">
+            </div>
+            <div class="item col-sm-3">
+              <img src="img/client/02.png">
+            </div>
+            <div class="item col-sm-3">
+              <img src="img/client/03.png">
+            </div>
+            <div class="item col-sm-3">
+              <img src="img/client/04.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12">
+          <a href="http://www.guurun.com" target="_blank">
+            <img src="http://shutterrunning.com/assets/img/guurun-logo.png" class="guurun-logo">
+          </a>
+          <a href="http://www.i-bitz.co.th" target="_blank">
+            <img src="http://shutterrunning.com/assets/img/i-bitz-logo.png" class="i-bitz-logo">
+          </a>
+        </div>
+        <div id="social-icon" class="col-sm-4 col-xs-12 text-center">
+          <i class="fa fa-facebook-square fa-2x"></i>
+          <i class="fa fa-instagram fa-2x"></i>
+          <i class="fa fa-twitter-square fa-2x"></i>
+        </div>
+        <div id="copyright" class="col-sm-4 col-xs-12 text-rigth">
+          <p>©copyrights Shutter Running Images Service v1.2.5</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!--/.Footer-->
+
+  <!-- Bootstrap core JavaScript -->
+
+
+  <!-- Plugin JavaScript -->
+  <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> -->
+
+  <script src="js/script.js"></script>
+  <!-- Optional JavaScript -->
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <title>ShutterRunning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <!-- Material Design icon font -->
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/payment.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">หน้าเเรก</a>
+    <a href="#">ปฎิทินการวิ่ง</a>
+    <a href="#">รายการวิ่ง</a>
+    <a href="#">สมัครวิ่ง</a>
+  </div>
+  <nav class="navbar navbar-light fixed-top scrolling-navbar" style="background-color: #1f1f1f;">
+    <div class="container">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <button style="color:#ffffff;background:none;border:0;">
+          &#9776;
+        </button>
+      </span>
+      <a id="navbar-brand" href="#">
+        <h5>ShutterRunning Image Service</h5>
+      </a>
+
+      <a href="payment.html">
+        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </nav>
+
+  <div class="layout-payment">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="stepwizard col-md-12 col-xs-12">
+          <div class="stepwizard-row setup-panel">
+            <div class="stepwizard-step">
+              <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+              <p>Step 1 : รายการสั่งซื้อทั้งหมด</p>
+            </div>
+            <div class="stepwizard-step">
+              <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+              <p>Step 2 : กรอกรายละเอียด</p>
+            </div>
+            <div class="stepwizard-step">
+              <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+              <p>Step 3 : ยืนยันการสั่งซื้อ</p>
+            </div>
+            <div class="stepwizard-step">
+              <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+              <p>Step 4 : ชำระเงินเสร็จสิ้น</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="form-payment">
+      <div class="row setup-content" id="step-1">
+
+        <div class="col-md-12 col-xs-12">
+          <h3>รายการสั่งซื้อทั้งหมด</h3>
+          <div class="table-responsive">
+            <table class="basket table table-hover col-xs-12 col-md-12">
+              <th>ลำดับ</th>
+              <th>ภาพ</th>
+              <th>รายละเอียด</th>
+              <th>จำนวน</th>
+              <th>ทั้งหมด</th>
+              <th></th>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img src="http://stocks.shutterrunning.com/photos/AU-03/PPR%200005.jpg" class="img-reponsive" width="150" height="100" alt="">
+                </td>
+                <td>
+                  <p>Digital File .JPG</p>
+                </td>
+                <td>
+                  <input type="number" name="" id="" value="1">
+                </td>
+                <td>100.00 บาท</td>
+                <td>
+                  <a href="#" class="btn btn-danger btn-lg">
+                    <span aria-hidden="true" data-toggle="tooltip" titie="ลบรายการนี้">&times;</span>
+                  </a>
+                </td>
+              </tr>
+              <tr style="background-color:rgb(233, 233, 233);">
+                <td colspan="4">
+                  <h4 align="right">ยอดชำระทั้งหมด</h4>
+                </td>
+                <td colspan="2">
+                  <h4>100.00 บาท</h4>
+                </td>
+              </tr>
+            </table>
+            <button class="btn btn-success nextBtn btn-lg pull-right" type="button">ถัดไป</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row setup-content" id="step-2">
+
+        <h2> กรุณากรอกรายละเอียด</h2>
+        <div class="col-sm-12">
+          <form id="form-payment" role="form" action="" method="post" class="form-horizontal">
+            <div class="form-group row">
+              <label for="example-text-input" class="col-2 col-form-label-lg">Email :</label>
+              <div class="col-10">
+                <input class="form-control" type="text" placeholder="กรอก Email" id="example-text-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-2 col-form-label-lg">ชื่อ :</label>
+              <div class="col-4 col-xs-10">
+                <input class="form-control" type="text" placeholder="กรอกชื่อ" id="example-text-input">
+              </div>
+              <label for="example-text-input" class="col-2 col-form-label-lg">นามสกุล :</label>
+              <div class="col-4 col-xs-10">
+                <input class="form-control" type="text" placeholder="กรอกนามสกุล" id="example-text-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-2 col-form-label-lg">ที่อยู่ :</label>
+              <div class="col-10">
+                <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="กรอกที่อยู่อย่างละเอียด"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-2 col-form-label-lg">โทรศัพท์ :</label>
+              <div class="col-6">
+                <input class="form-control" type="text" placeholder="กรอกเบอร์โทรศัพท์" id="example-text-input">
+              </div>
+            </div>
+          </form>
+          <center>
+            <button class="btn btn-danger prevBtn btn-lg" type="button">ย้อนหลัง</button>
+            <button class="btn btn-success nextBtn btn-lg" type="button">ถัดไป</button>
+          </center>
+        </div>
+      </div>
+
+
+
+      <div class="row setup-content" id="step-3">
+        <div class="col-xs-12 col-md-12">
+          <div class="col-md-12">
+            <h2>ยืนยันการสั่งซื้อ</h2>
+            <ul class="nav nav-pills nav-justified">
+              <li class="nav-item">
+                <a data-toggle="tab" class="nav-link active" href="#credit">บัตรเคดิตเเละเดรบิต</a>
+              </li>
+              <li class="nav-item">
+                <a data-toggle="tab" class="nav-link" href="#paymentLayout">ชำระด้วยเงินสด</a>
+              </li>
+            </ul>
+            <div class="col-sm-12 col-xs-12">
+              <div class="tab-content">
+                <div id="credit" class="tab-pane fade in active submit-payment">
+                  <h3>บัตรเครดิตหรือเดบิต</h3>
+                  <div class="credit col-sm-12 col-xs-12">
+                    <div id="credit-preview" class="col-sm-12 col-xs-12">
+                      <div>
+                        <img src="http://www.acnews.net/admin/img_large/1358970.jpg">
+                      </div>
+                      <div class="credit-text col-sm-12 col-xs-12">
+                        <p>card Number</p>
+                        <h4>5555 9999 0000 9999</h4>
+                      </div>
+                      <div class="row" id="credit-text2">
+                        <div class="column left">
+                          <p>Expiration</p>
+                          <h4>May 2018</h4>
+                        </div>
+                        <div class="column center">
+                          <p>CVC</p>
+                          <h4>123</h4>
+                        </div>
+                        <div class="column right">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/MasterCard_early_1990s_logo.png" align="right">
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="container">
+                      <form action="#" class="form-horizontal">
+                        <div class="form-group row">
+                          <label for="example-text-input" class="col-2 col-form-label-lg">ชื่อบนบัตร :</label>
+                          <div class="col-10">
+                            <input class="form-control" type="text" placeholder="กรุณากรอกชื่อ" id="example-text-input">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-text-input" class="col-2 col-form-label-lg">Card Number :</label>
+                          <div class="col-10">
+                            <input class="form-control" type="text" placeholder="หมายเลขบัตรเครดิต" id="example-text-input">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-text-input" class="col-2 col-form-label-lg">วันหมดอายุ :</label>
+                          <div class="col-4 col-xs-10">
+                            <input class="form-control" type="text" placeholder="เดือน/ปี" id="example-text-input">
+                          </div>
+                          <label for="example-text-input" class="col-2 col-form-label-lg">รหัสความปลอดภัย : </label>
+                          <div class="col-4 col-xs-10">
+                            <input class="form-control" type="text" placeholder="กรุณารหัสบัตร" id="example-text-input">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <p style="color:red;">
+                      <strong>* หมายเหตุ :</strong> กรุณากรอกข้อมูลให้ครบถ้วนเพื่อใช้ในการตรวจสอบ
+                    </p>
+                    <div class="button-payment">
+                      <button class="btn btn-danger prevBtn btn-lg" type="button">ย้อนหลัง</button>
+                      <a href="invoice.html">
+                        <button class="btn btn-success prenNext btn-lg" type="button">ถัดไป</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="paymentLayout" class="tab-pane fade submit-payment">
+                  <h3>หลักฐานการชำระค่าสั่งซื้อภาพ</h3>
+
+                  <div class="input-group image-preview">
+                    <input type="text" class="form-control image-preview-filename" disabled="disabled">
+                    <!-- don't give a name === doesn't send on POST/GET -->
+                    <span class="input-group-btn">
+                      <!-- image-preview-clear button -->
+                      <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                        <span class="glyphicon glyphicon-remove"></span> Clear
+                      </button>
+                      <!-- image-preview-input -->
+                      <div class="btn btn-default image-preview-input">
+                        <span class="glyphicon glyphicon-folder-open"></span>
+                        <span class="image-preview-input-title">Browse</span>
+                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview" />
+                        <!-- rename it -->
+                      </div>
+                    </span>
+                  </div>
+                  <p style="color:red;">
+                    <strong>* หมายเหตุ :</strong> กรุณาแนบหลักฐานการชำระค่าสั่งซื้อภาพ ไฟล์ที่สามารถ upload ได้คือ JPG, PNG ขนาดไม่เกิน
+                    3 MB
+                  </p>
+                  <div class="button-payment">
+                    <button class="btn btn-danger prevBtn btn-lg" type="button">ย้อนหลัง</button>
+                    <a href="invoice.html">
+                      <button class="btn btn-success prenNext btn-lg" type="button">ถัดไป</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+              <div class="list">
+                <table class="table table-hover" text-align="center">
+                  <tr>
+                    <td>
+                      <img class="img-reponsive" src="https://www.kasikornbank.com/SiteCollectionDocuments/about/img/logo/logo.png" width="100"
+                        height="100">
+                    </td>
+                    <td>
+                      <p class="col-md-10">ธนาคารกสิกรไทย สาขาอ่อนนุช บัญชีออมทรัพย์ เลขที่ 06 02 80 95 87 ชื่อบัญชี อนุทิน น้อยศิริ</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="img-reponsive" src="http://www.dg-arts.com/media/img/bank/kru.png" alt="" width="100" height="100">
+                    </td>
+                    <td>
+                      <p class="col-md-10">ธนาคารกรุงศรี สาขาสุขุมวิท 101/1 (ปิยรมย์เพลส) บัญชีออมทรัพย์ เลขที่ 18 51 37 29 24 ชื่อบัญชี อนุทิน
+                        น้อยศิริ
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="img-reponsive" width="100" height="100" src="https://www.it24hrs.com/wp-content/uploads/2016/07/prompt-pay-thai-e-payment-01.png"
+                        alt="">
+                    </td>
+                    <td>
+                      <p class="col-md-10">พร้อมเพย์ (PromptPay) ชื่อบัญชี อนุทิน น้อยศิริ 081 817 9056</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- <div class="row setup-content" id="step-4">
+        <div class="col-xs-12 col-md-12">
+          <div class="col-md-12 col-xs-12">
+            <h3> Step 3</h3>
+            <button class="btn btn-primary prevBtn btn-lg pull-left" type="button">Previous</button>
+            <button class="btn btn-success prenNext btn-lg pull-right" type="submit">Submit</button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12">
+          <a href="http://www.guurun.com" target="_blank">
+            <img src="http://shutterrunning.com/assets/img/guurun-logo.png" class="guurun-logo">
+          </a>
+          <a href="http://www.i-bitz.co.th" target="_blank">
+            <img src="http://shutterrunning.com/assets/img/i-bitz-logo.png" class="i-bitz-logo">
+          </a>
+        </div>
+        <div id="social-icon" class="col-sm-4 col-xs-12 text-center">
+          <i class="fa fa-facebook-square fa-2x"></i>
+          <i class="fa fa-instagram fa-2x"></i>
+          <i class="fa fa-twitter-square fa-2x"></i>
+        </div>
+        <div id="copyright" class="col-sm-4 col-xs-12 text-rigth">
+          <p>©copyrights Shutter Running Images Service v1.2.5</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!--/.Footer-->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+
+  <!-- Plugin JavaScript -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <script src="js/payment.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
