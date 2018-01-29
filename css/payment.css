@@ -116,7 +116,7 @@
     margin: 50px 50px 50px 50px ;
 }
 .address-invoice h5 {
-    color: lightslategray
+    color: rgb(104, 104, 104)
 }
 .address-invoice h4 {
     margin-left: 10px;
@@ -124,7 +124,7 @@
 .address-invoice .type-payment {
     margin-top: 20px;
     width: 50%;
-    background-color: #fc561f;
+    /* background-color: #fc561fbe; */
     border: 2px solid #ccc; 
     text-align: center;
     border-radius: 25px;
@@ -132,6 +132,8 @@
     padding: 40px;
 
 }
+
+
 .button-payment {
     margin: 10px;
 }
@@ -166,8 +168,8 @@
 }
 #credit-preview {
     display: inline-block;
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
     background-color: rgb(80, 7, 148);
     border:  rgb(89, 9, 163);
     border-radius: 20px;
@@ -184,7 +186,7 @@
     text-align: left;
     color: #fff;
     margin-left: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
 
 }
 #credit-text2 {
@@ -209,6 +211,7 @@
     width: 30;
     text-align: right;
 }
+
 
 
 

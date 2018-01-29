@@ -16,7 +16,6 @@ html
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/landing-page.css">
 </head>
 
 <body>
@@ -30,6 +29,7 @@ html
         </div>
         <nav class="navbar navbar-light fixed-top scrolling-navbar" style="background-color: #1f1f1f;">
             <div class="container">
+                
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">
                     <button style="color:#ffffff;background:none;border:0;">
                         &#9776;
@@ -39,7 +39,7 @@ html
                     <h5>ShutterRunning Image Service
                     </h5>
                 </a>
-                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                <a href="payment.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a> 
             </div>
         </nav>
 
@@ -88,7 +88,7 @@ html
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6">
-                        <a href="#" data-toggle="modal" data-target="#myModal" title="Image 2">
+                        <a href="#" data-toggle="modal" data-target="#myModal2" title="Image 2">
                             <img class="img-fluid" src="http://stocks.shutterrunning.com/photos/AW-01/WAT%200016.jpg" alt="">
                         </a>
                     </div>
@@ -229,20 +229,20 @@ html
         </div>
     </div>
 
-    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div id="myModal" class="modal custom fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header" style="background-color:#FC561F; color:#ffffff;">
                     <h3>รายละเอียด</h3>
                 </div>
                 <div class="modal-body">
-                    <div class="col-md-12" text-content="center">
-                        <img src="http://stocks.shutterrunning.com/photos/AU-01/GIN%200001.jpg" class="img-responsive" width="450">
+                    <div class="col-xs-6">
+                        <img src="http://stocks.shutterrunning.com/photos/AU-01/GIN%200001.jpg" class="img-responsive" width="100%">
                         <span>
                             <i class="fa fa-heart" aria-hidden="true"></i>
                         </span>
                     </div>
-                    <div class="col-md-12">
+                    <div class="tab-detail col-xs-6">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#home" role="tab">ไฟล์ภาพ</a>
@@ -254,7 +254,7 @@ html
                                 <a class="nav-link" data-toggle="tab" href="#menu2" role="tab">ภาพพร้อมกรอบ</a>
                             </li>
                         </ul>
-                        <div class="tab-content">
+                        <div class="tab-content col-xs-12">
                             <div id="home" class="tab-pane active container" role="tabpanel">
                                 <table class="table table-hover">
                                     <tr>
@@ -435,11 +435,225 @@ html
                 <div class="modal-footer">
                     <button id="prev-btn" class="btn btn-warning">ย้อนหลัง</button>
                     <button id="next-btn" class="btn btn-">ถัดไป</button>
-                    <a href="payment.html" class="btn btn-success pull-right btn-lg">สั่งซื้อรายการนี้</a>
+                    <button class="btn btn-success pull-right btn-lg" data-toggle="modal" data-dismiss="modal" data-target="#gotoPayment">สั่งซื้อรายการนี้</button>
+                    
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="myModal2" class="modal custom fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#FC561F; color:#ffffff;">
+                        <h3>รายละเอียด</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-xs-6">
+                            <img src="http://stocks.shutterrunning.com/photos/AW-01/WAT%200016.jpg" class="img-responsive" width="100%">
+                            <span>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="tab-detail col-xs-6">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">ไฟล์ภาพ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#menu1" role="tab">ภาพอย่างเดียว</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#menu2" role="tab">ภาพพร้อมกรอบ</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content col-xs-12">
+                                <div id="home" class="tab-pane container" role="tabpanel">
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <th width="5%">จำนวน</th>
+                                            <th width="35%">รายละเอียด</th>
+                                            <th width="40%">ขนาด</th>
+                                            <th width="20%">ราคา</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" value="1" size="4">
+                                            </td>
+                                            <td>ไฟล์ภาพนามสกุล .PNG</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 200 * 360">S</button>
+                                                <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="ขนาด 480 * 720">M</button>
+                                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="ขนาด 1280 * 960">L</button>
+                                            </td>
+                                            <td>100.00 บาท</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div id="menu1" class="tab-pane container active" role="tabpanel">
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <th width="5%">จำนวน</th>
+                                            <th width="35%">รายละเอียด</th>
+                                            <th width="40%">ขนาด</th>
+                                            <th width="20%">ราคา</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพอย่างเดียว</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 5 * 7 นิ้ว">SS</button>
+                                            </td>
+                                            <td>80.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพอย่างเดียว</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 8 * 12 นิ้ว">S</button>
+                                            </td>
+                                            <td>80.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพอย่างเดียว (เลือบพลาสติก)</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 8 * 12 นิ้ว">S</button>
+                                            </td>
+                                            <td>100.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพอย่างเดียว</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 12 * 18 นิ้ว">M</button>
+                                            </td>
+                                            <td>400.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพอย่างเดียว</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 16 * 24 นิ้ว">L</button>
+                                            </td>
+                                            <td>450.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพอย่างเดียว</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 20 * 30 นิ้ว">XL</button>
+                                            </td>
+                                            <td>500.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพอย่างเดียว</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 24 * 36 นิ้ว">XXL</button>
+                                            </td>
+                                            <td>600.00 บาท</td>
+                                        </tr>
+    
+    
+                                    </table>
+                                </div>
+                                <div id="menu2" class="tab-pane container" role="tabpanel">
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <th width="5%">จำนวน</th>
+                                            <th width="35%">รายละเอียด</th>
+                                            <th width="40%">ขนาด</th>
+                                            <th width="20%">ราคา</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพพร้อมกรอบตั้งโต๊ะ</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 5 * 7 นิ้ว">S</button>
+                                            </td>
+                                            <td>350.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพพร้อมกรอบลอยเคลือบฟิล์ม</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 8 * 12 นิ้ว">M</button>
+                                            </td>
+                                            <td>450.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพพร้อมกรอบลอยเคลือบฟิล์ม</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 12 * 18 นิ้ว">L</button>
+                                            </td>
+                                            <td>600.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพพร้อมกรอบลอยเคลือบฟิล์ม</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 16 * 24 นิ้ว">XL</button>
+                                            </td>
+                                            <td>750.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพพร้อมกรอบลอยเคลือบฟิล์ม</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 12 * 36 นิ้ว">XXL</button>
+                                            </td>
+                                            <td>900.00 บาท</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="" id="" placeholder="จำนวน" size="4">
+                                            </td>
+                                            <td>ภาพพร้อมกรอบลอยเคลือบฟิล์ม</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="ขนาด 8 * 12 นิ้ว">XXXL</button>
+                                            </td>
+                                            <td>1050.00 บาท</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="prev-btn" class="btn btn-warning">ย้อนหลัง</button>
+                        <button id="next-btn" class="btn btn-">ถัดไป</button>
+                        <button class="btn btn-success pull-right btn-lg" data-toggle="modal" data-dismiss="modal" data-target="#gotoPayment">สั่งซื้อรายการนี้</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <div class="center">
         <div class="pagination">
@@ -453,6 +667,24 @@ html
             <a href="#">.</a>
             <a href="#">10</a>
             <a href="#">&raquo;</a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="gotoPayment" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ข้อมูลการสั่งซื้อ</h4>
+                </div>
+                <div class="modal-body">
+                    <p>คุณต้องการจะดูรายการที่คุณสั่งซื้อ หรือต้องการเลือกภาพอื่นๆต่อไป ดูรายการที่สั่งซื้อ</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="payment2.html" class="btn btn-default">ดูรายการสั่งซื้อ</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">เลือกภาพอื่นต่อ</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -481,7 +713,6 @@ html
             </div>
         </div>
     </footer>
-
     <!--/.Footer-->
 
     <!-- Optional JavaScript -->

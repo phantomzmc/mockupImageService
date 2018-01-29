@@ -690,5 +690,18 @@ input[type="number"]{
   border-radius: 50%;
   box-shadow: 0 0 0 3px #FF6D00, 0 0 0 4px #FF6D00, 0 2px 5px 4px rgba(0,0,0,.2);
 }
+.tab-detail{
+  margin-left: 10px;
+}
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal.custom .modal-dialog {
+  width:100%;
+  /*add what you want here*/
+}
 
 
